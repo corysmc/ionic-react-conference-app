@@ -12,6 +12,7 @@ const Map: React.FC<MapProps> = ({ mapCenter, locations }) => {
 
   useEffect(() => {
 
+    if (!mapEle.current) return;
     map.current = new google.maps.Map(mapEle.current, {
       center: {
         lat: mapCenter.lat,
