@@ -25,7 +25,7 @@ const Support: React.FC<SupportProps> = () => {
         <IonButton href="/support/new">New Support Ticket</IonButton>
       </IonContent>
       <Switch>
-          <Route path="/support/new" exact component={SupportModal} />
+        <Route path="/support/new" exact component={SupportModal} />
       </Switch>
     </IonPage>
   );
